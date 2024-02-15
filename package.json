@@ -1,0 +1,32 @@
+{
+    "name": "unbound-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/bundle.js",
+    "type": "module",
+    "scripts": {
+        "build": "rollup -c --configPlugin rollup-plugin-esbuild"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "chalk-animation": "^2.0.3",
+        "figlet": "^1.7.0",
+        "inquirer": "^9.2.14",
+        "nanospinner": "^1.1.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@types/chalk-animation": "^1.6.3",
+        "@types/figlet": "^1.5.8",
+        "@types/inquirer": "^9.0.7",
+        "@types/node": "^20.11.19",
+        "rollup": "^4.11.0",
+        "rollup-plugin-esbuild": "^6.1.1",
+        "typescript": "^5.3.3"
+    }
+}

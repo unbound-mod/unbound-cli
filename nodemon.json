@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        "dist",
+        "rollup.config-*.mjs"
+    ],
+    "exec": "pnpm build && node .",
+    "ext": "*.*"
+}
