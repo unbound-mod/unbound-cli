@@ -34,7 +34,7 @@ async function promptAuthors() {
         const { id } = await inquirer.prompt({
             name: 'id',
             type: 'input',
-            message: 'Please enter the author\'s discord identifier:',
+            message: `Please enter ${name}\'s discord identifier:`,
             default() {
                 return '<id>'
             }
