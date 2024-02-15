@@ -8,12 +8,10 @@
         "build": "rollup -c --configPlugin rollup-plugin-esbuild"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Unbound Team",
+    "license": "Unlicensed",
     "dependencies": {
         "chalk": "^5.3.0",
-        "chalk-animation": "^2.0.3",
-        "figlet": "^1.7.0",
         "inquirer": "^9.2.14",
         "nanospinner": "^1.1.0"
     },

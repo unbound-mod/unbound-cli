@@ -21,12 +21,17 @@ export default defineConfig({
         json(),
         esbuild({ target: 'ES2022' }),
         nodeResolve(),
+        // Workaround for it (strangely) adding browser code even though this is a NodeJS package.
+        // If this does not run, the bundle will not run, because navigator does not exist in the NodeJS context.
         {
             name: 'navigator',
             async transform(code) {
                 return `var navigator = { userAgent: 'Chrome/' }; ${code}`;
             }
         },
+
+        // Add the NodeJS shebang to the top of the file.
+        // This should run at the very end of the plugins array.
         {
             name: 'shebang',
             async transform(code) {
