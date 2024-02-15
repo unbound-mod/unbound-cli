@@ -22,6 +22,8 @@ spinner.update({
     text: 'Generating manifest.json...'
 })
 
+data['main'] = `src/${template.files.find(x => x.name.startsWith('index'))?.name}`
+
 await fs.writeFile(`./plugins/${data.id}/manifest.json`, JSON.stringify(data, null, 2));
 
 spinner.update({
