@@ -5,8 +5,7 @@ import promptAuthors from "./promptAuthors";
 import promptTemplate from "./promptTemplate";
 
 async function queryDataFromCli() {
-    console.log('\n');
-    console.log(chalk.bold(chalk.underline(chalk.magenta('Welcome to the Unbound Plugin Generator!'))));
+    console.log(chalk.bold(chalk.underline(chalk.magenta('Welcome to the Unbound Plugin CLI!'))));
     console.log('⎯'.repeat(process.stdout.columns));
 
     const information = await promptBasicInformation();
