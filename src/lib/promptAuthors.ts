@@ -1,8 +1,8 @@
 import inquirer from "inquirer";
 
 const authorMap = {
-    ADD_AUTHOR: 'Add an author',
-    CONTINUE: 'Continue'
+    ADD_AUTHOR: 'Add a new plugin author',
+    CONTINUE: 'Continue to template'
 }
 
 async function promptAuthors() {
@@ -14,7 +14,7 @@ async function promptAuthors() {
         const { authorChoice } = await inquirer.prompt({
             name: 'authorChoice',
             type: 'list',
-            message: 'Add a plugin author?',
+            message: 'Would you like to add a new plugin author?',
             choices: Object.values(authorMap)
         })
 
@@ -27,7 +27,7 @@ async function promptAuthors() {
             type: 'input',
             message: 'Please enter the author\'s name:',
             default() {
-                return 'eternal'
+                return 'you'
             }
         })
 

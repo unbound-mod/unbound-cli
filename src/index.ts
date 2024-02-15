@@ -56,7 +56,10 @@ console.log(`
 
     ${chalk.greenBright(chalk.bold('*'))} ${chalk.greenBright('Run')} ${chalk.bold(`node build.mjs`)} ${chalk.greenBright('or')} ${chalk.bold(`nodemon`)} ${chalk.greenBright('to build your plugin.')}
     ${chalk.greenBright(chalk.bold('*'))} ${chalk.greenBright('Open a new terminal and run')} ${chalk.bold(`cd dist && http-server`)} ${chalk.greenBright('to serve the plugin locally.')}
-    ${chalk.greenBright(chalk.bold('*'))} ${chalk.greenBright('Install it to your device with the url')} ${chalk.bold(`http://<local-ip>:<port>/${data.id}/manifest.json`)}${chalk.greenBright('.')}
+    ${chalk.greenBright(chalk.bold('*'))} ${chalk.greenBright('Install it to your device via the url below:')}
+
+    ${chalk.bold(`     http://<local-ip>:<port>/${data.id}/manifest.json`)}
+
     ${chalk.greenBright(chalk.bold('*'))} ${chalk.greenBright('Check out our documentation at')} ${chalk.bold('https://docs.unbound.rip')} ${chalk.greenBright('for help.')}
     ${chalk.greenBright(chalk.bold('*'))} ${chalk.greenBright('Have fun developing!')}
 `.split('\n').map(x => x.trim()).join('\n'))

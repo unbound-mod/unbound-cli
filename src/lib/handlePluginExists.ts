@@ -48,7 +48,7 @@ async function handlePluginExists(baseId: string) {
 
     while (true) {
         if (existsSync(`./plugins/${id}`)) {
-            console.log(chalk.bold(chalk.bold(chalk.yellowBright('A plugin already exists with that identifier!'))))
+            console.log(chalk.bold(chalk.bold(chalk.yellowBright(`A plugin already exists with the identifier '${id}'!`))))
 
             const { chosenOption } = await inquirer.prompt({
                 name: 'chosenOption',
